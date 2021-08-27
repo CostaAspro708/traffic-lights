@@ -7,7 +7,8 @@ function Traffic_Light() {
 //on = 1 means green light, on = 0 means red.
  const [on, SetOn] = useState(1);
 
- //When container is clicked change on.
+ //When container is clicked variable change on.
+ //Check on and display appropriate content.
  if(on == 0){
    return(
     <div className="traffic_light_container" onClick={() => SetOn(1)}>
